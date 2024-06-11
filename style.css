@@ -1,0 +1,62 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: rgb(15, 15, 15);
+    height: 70px;
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 5px 15px;
+}
+
+.cabecalho h2 {
+    margin: 0px 0px 0px 60px;
+    font-size: 35px;
+}
+
+.cabecalho h2 :hover {
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: rgb(15, 15, 15);
+    background-color: rgb(73, 73, 73);
+}
+
+.menu {
+    display: flex;
+    margin: 0px 60px 0px 0px;
+}
+
+.secao {
+    margin-left: 30px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+}
+
+.secao :hover {
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: rgb(15, 15, 15);
+    background-color: rgb(73, 73, 73);
+}
+/* Fim Cabeçalho */
+
+.espacamento {
+    line-height: 1.2em;
+}
+
+.bordas {
+    background-color: rgb(218, 218, 218);
+}
