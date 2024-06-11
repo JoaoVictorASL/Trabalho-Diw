@@ -11,57 +11,67 @@
 <body>
     <main class="container-fluid ps-5 pe-5">
         <div class="row">
-
-            <header class="col-12 p-1">
+            <!--Início Cabeçalho-->
+            <header class="col-12">
                 <nav class="cabecalho">
-                    <h2 class="col text-center text-lg-start"><a href="index.html">João Victor</a></h2>
-                    <ul class="menu d-none d-md-flex">
-                        <li class="secao"><a href="repo.html">LINK 1</a></li>
-                        <li class="secao"><a href="repo.html">LINK 2</a></li>
-                        <li class="secao"><a href="repo.html">LINK 3</a></li>
+                    <h2 class="col-text-start"><a href="index.html">João Victor</a></h2>
+                    <span class="menu-toggle d-lg-none" onclick="toggleMenu()">☰</span>
+                    <ul id="menu" class="menu d-none d-lg-flex col-8 mx-0">
+                        <li class="secao"><a href="repo.html" target="_blank">LINK 1</a></li>
+                        <li class="secao"><a href="repo.html" target="_blank">LINK 2</a></li>
+                        <li class="secao"><a href="repo.html" target="_blank">LINK 3</a></li>
                     </ul>
-                </nav>
+                </nav>             
             </header>
+            <!--Fim Cabeçalho-->
 
-            <div class=" col-12 p-1">
-                <h3 class="mb-0"><strong>Repositório:</strong> Lorem ipsum dolor sit amet consectetur.</h3>
-                <hr class="border-2 border-black mt-0 mb-4">
+            <!--Divisão de Categoria-->
+            <div id="reposit" class="divisaoCategorias col-12">
+                <h3 id="Repositorio" class="mb-0">Repositórios</h3>
+                <hr>
             </div>
-
-            <div class=" col-12">
-                <h5 class="text-primary">Descrição</h5>
+            <!--Fim Divisão de Categoria-->
+       
+            <!--Início Descrição-->
+            <div class="descricao col-12">
+                <h4 class="title">Descrição</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit, labore consequatur quis quo voluptatum vitae, nulla, assumenda harum delectus eligendi aut reiciendis tempore totam adipisci illo qui quaerat inventore eveniet eum ex iure sapiente provident? Nulla delectus nisi cumque vitae dicta, exercitationem eius nam, at recusandae, fugit et adipisci ratione asperiores ex provident. Repellat, sapiente ab. Nulla totam laborum consequatur, in culpa dignissimos illo tempora praesentium, earum iure neque similique libero quidem, dolor dolorum omnis optio amet esse hic?</p>
             </div>
+            <!--Fim Descrição-->
 
+            <!--Início Data de Criação-->
             <div class=" col-12">
-                <h5 class="text-primary">Data de Criação</h5>
+                <h4 class="title">Data de Criação</h4>
                 <p>12/04/2024</p>
             </div>
+            <!--Fim data de Criação-->
 
+            <!--Início Linguagem-->
             <div class=" col-12">
-                <h5 class="text-primary">Linguagem</h5>
+                <h4 class="title">Linguagem</h4>
                 <p>Html, Css e JavaScript</p>
             </div>
+            <!--Fim linguagem-->
 
+            <!--Início Link de Acesso-->
             <div class="col-12 mb-3">
-                <h5 class="text-primary">Link de Acesso</h5>
-                <a href="index-2-página.html" target="_blank">www.LinkDeAcesso.com</a>
+                <h4 class="title">Link de Acesso</h4>
+                <a href="repo.html" target="_blank">www.LinkDeAcesso.com</a>
             </div>
+            <!--Fim Link de Acesso-->
 
+            <!--Início Tópicos-->
             <div class=" col-12">
-                <h5 class="text-primary">Tópicos</h5>
+                <h4 class="title">Tópicos</h4>
                 <ul class="topicos">
                     <li>JavaScript</li>
                     <li>Html</li>
                     <li>FrontEnd</li>
                 </ul>
             </div>
-            
-            
-
-
-
+            <!--Fim Tópicos-->
         </div>
     </main>
+    <script src="scriptsRepo.js"></script>
     
 </body>

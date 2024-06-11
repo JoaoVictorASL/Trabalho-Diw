@@ -4,56 +4,120 @@
     padding: 0;
 }
 
-/* Cabeçalho */
+/* Início Cabeçalho */
 .cabecalho {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(0, 0, 0);
     height: 70px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
 
 .cabecalho a {
     text-decoration: none;
     color: white;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;  
 }
 
 .cabecalho h2 {
-    margin: 0px 0px 0px 60px;
     font-size: 35px;
+    margin: 0px 20px;
 }
 
-.cabecalho h2 :hover {
-    border: solid 1px;
+.cabecalho h2:hover {
     border-radius: 10px;
-    border-color: rgb(15, 15, 15);
     background-color: rgb(73, 73, 73);
+}
+
+.secao {
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.secao:hover {
+    border-radius: 10px;
+    background-color: rgb(73, 73, 73);
+}
+
+ul {
+    margin: 0 !important; 
+    padding: 0 !important;
 }
 
 .menu {
     display: flex;
-    margin: 0px 60px 0px 0px;
-}
-
-.secao {
-    margin-left: 30px;
-    text-decoration: none;
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .menu {
+        display: none; /* Começa escondido */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Ajuste para a altura do cabeçalho */
+        right: 1rem;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        z-index: 1000;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .menu a {
+        color: black;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+}
+/* Fim Cabeçalho */
+
+/* Início Divisão de Categorias */
+.divisaoCategorias {
+    padding: 25px 0px;
+}
+
+.divisaoCategorias hr {
+    height: 2px;
+    background-color: rgb(85, 85, 85);
+    margin: 0;
+    opacity: 1;
+}
+
+.divisaoCategorias h3{
+    color: rgb(0, 0, 0);
     font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+}
+/* Fim Divisão de Categorias */
+
+.title {
+    color: rgb(0, 153, 255);
+
 }
 
-.secao :hover {
-    border: solid 1px;
-    border-radius: 10px;
-    border-color: rgb(15, 15, 15);
-    background-color: rgb(73, 73, 73);
-}
-/* Fim Cabeçalho */ 
-
-/* Tópicos */
 .topicos {
     display: flex;
     flex-wrap: wrap;
@@ -61,10 +125,9 @@
 }
 
 .topicos li {
-    border: solid 1px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgb(0, 89, 255);
     color: white;
     padding: 5px 15px;
-    margin: 10px 20px 0px 0px;
+    margin: 0px 20px 20px 0px;
 }
